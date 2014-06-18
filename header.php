@@ -42,9 +42,13 @@
 
 					<!-- nav -->
 					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
+						<?php header_nav_menu(); ?>
 					</nav>
 					<!-- /nav -->
 
 			</header>
 			<!-- /header -->
+
+                        <div class="menu-social">
+                           <?php social_nav_menu(); ?>
+                        </div>

@@ -96,6 +96,39 @@ input:focus {
 .nav {
 
 }
+
+
+/* REDES SOCIALES */
+div.menu-social ul{
+    float:right;
+    text-align: center;
+    list-style: none;
+}
+
+div.menu-social ul li {
+    position: relative;
+    display:inline-block;
+}
+div.menu-social li a:before {
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: top;
+    font-family: 'Font-Awesome';
+    font-size: 30px;
+    color:#000;
+    -webkit-font-smoothing: antialiased;
+    content: '\f0c0';
+}
+
+div.menu-social span.screen-reader-text {
+    display:none;
+}
+
+
+div.menu-social li a[href*="facebook.com"]::before { content: '\f09a';}
+div.menu-social li a[href*="twitter.com"]::before { content: '\f099';}
+div.menu-social li a[href*="plus.google.com"]::before { content: '\f0d5';}
+
 /* sidebar */
 .sidebar {
 

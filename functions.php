@@ -79,28 +79,42 @@ if (function_exists('add_theme_support'))
 \*------------------------------------*/
 
 // HTML5 Blank navigation
-function html5blank_nav()
-{
-	wp_nav_menu(
-	array(
-		'theme_location'  => 'header-menu',
-		'menu'            => '',
-		'container'       => 'div',
-		'container_class' => 'menu-{menu slug}-container',
-		'container_id'    => '',
-		'menu_class'      => 'menu',
-		'menu_id'         => '',
-		'echo'            => true,
-		'fallback_cb'     => 'wp_page_menu',
-		'before'          => '',
-		'after'           => '',
-		'link_before'     => '',
-		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
-		'depth'           => 0,
-		'walker'          => ''
-		)
-	);
+function header_nav_menu() {
+    if ( has_nav_menu('header-menu') ) {
+        wp_nav_menu(
+                array(
+                    'theme_location' => 'header-menu',
+                    'container' => 'div',
+                    'container_id' => 'header_menu',
+                    'container_class' => 'header_menu',
+                    'menu_id' => 'header_menu_item',
+                    'menu_class' => 'header_menu_item',
+                    'depth' => 1,
+                    
+                )
+         );
+    }
+}
+
+
+function social_nav_menu() {
+    if ( has_nav_menu('redes-menu') ) {
+        wp_nav_menu(
+                array(
+                    'theme_location' => 'redes-menu',
+                    'container' => 'div',
+                    'container_id' => 'redes-menu',
+                    'container_class' => 'redes-menu',
+                    'menu_id' => 'redes-menu_item',
+                    'menu_class' => 'redes-menu_item',
+                    'depth' => 1,
+                    'link_before' => '<span class="screen-reader-text">',
+                    'link_after' => '</span>',
+                    'fallback_cb' => '',
+                    
+                )
+         );
+    }
 }
 
 // Load HTML5 Blank scripts (header.php)
