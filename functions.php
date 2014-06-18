@@ -9,8 +9,24 @@
 	External Modules/Files
 \*------------------------------------*/
 
-// Load any external files you have here
+/** CODIGO PARA AGREGAR WebDevStudios/Custom-Metaboxes-and-Fields-for-WordPress **/
 
+/** Solo reemplazar el archivo example-functions.php por fields.php, colocarlo en la raiz del archivo y renombrar la carpeta
+de Custom Metaboxes and Fields como metaboxes **/
+
+add_action( 'init', 'cmb_initialize_cmb_meta_boxes', 9999 );
+/**
+ * Initialize the metabox class.
+ */
+
+require_once ('fields.php') ;
+
+function cmb_initialize_cmb_meta_boxes() {
+
+    if ( ! class_exists( 'cmb_Meta_Box' ) )
+        require_once 'metaboxes/init.php';
+
+}
 /*------------------------------------*\
 	Theme Support
 \*------------------------------------*/
