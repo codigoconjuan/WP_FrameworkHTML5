@@ -1,5 +1,7 @@
+			<div class="clear"></div>
+
 			<!-- footer -->
-			<footer class="footer clear" role="contentinfo">
+			<footer class="footer" role="contentinfo">
 
 				<!-- copyright -->
 				<p class="copyright">

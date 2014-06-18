@@ -45,6 +45,7 @@ body {
 }
 .clear {
     *zoom:1;
+    clear:both;
 }
 img {
 	max-width:100%;
