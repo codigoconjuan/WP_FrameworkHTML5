@@ -13,6 +13,7 @@
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
 		<?php wp_head(); ?>
+                <?php include (TEMPLATEPATH . '/galeria/gallery_header_include.php'); ?>
 		<script>
         // conditionizr.com
         // configure environment tests

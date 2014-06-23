@@ -1,0 +1,6 @@
+<?php
+
+	// script goes here
+
+
+?>

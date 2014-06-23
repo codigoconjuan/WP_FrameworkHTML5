@@ -1,0 +1,27 @@
+.gallery .gallery-icon a img {
+    width: 111px!important;
+    height: 91px!important;
+}
+.gallery .wp-caption-text {
+	display: none!important;
+}
+
+.gallery > br {
+	display:none;
+}
+
+.gallery .gallery-item {
+	margin: 0px 5px 5px 0px!important;
+}
+
+.gallery .gallery-item {
+	width:auto!important;
+}
+.lightbox .lb-image {
+	max-width: inherit;
+	max-width:none;
+}
+
+.gallery .gallery-item img {
+    border:none!important;
+}
